@@ -14,25 +14,25 @@
     ]
   },
   "User": {
-    "dataSource": "redisDS"
+    "dataSource": "db"
   },
   "AccessToken": {
-    "dataSource": "redisDS",
+    "dataSource": "db",
     "public": false
   },
   "ACL": {
-    "dataSource": "redisDS",
+    "dataSource": "db",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "redisDS",
+    "dataSource": "db",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "redisDS",
+    "dataSource": "db",
     "public": false
   },
   "Url": {
