@@ -1,4 +1,6 @@
 machine:
+  os:
+  - osx
   environment:
     NODE_ENV: test
   node:
