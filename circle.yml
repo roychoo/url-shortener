@@ -8,4 +8,4 @@ deployment:
   staging:
     branch: master
     commands:
-      - ./deploy.sh
+      - ./scripts/deploy.sh
