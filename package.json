@@ -9,7 +9,7 @@
     "dev": "nodemon server/server.js --watch common --watch server",
     "lint": "eslint .",
     "start": "node .",
-    "test": "mocha test/**/*.js",
+    "test": "NODE_ENV=test mocha test/**/*.js",
     "test:watch": "npm run test -- --watch"
   },
   "dependencies": {
