@@ -14,33 +14,33 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "redisDS"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "redisDS",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "redisDS",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "redisDS",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "redisDS",
     "public": false
   },
   "Url": {
-    "dataSource": "db",
+    "dataSource": "redisDS",
     "public": true
   },
   "Log": {
-    "dataSource": "db",
+    "dataSource": "redisDS",
     "public": true
   }
 }
