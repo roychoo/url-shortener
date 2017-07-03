@@ -1,0 +1,36 @@
+{
+  "name": "Log",
+  "plural": "Logs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "userAgent": {
+      "type": "string",
+      "required": true
+    },
+    "ip": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "url": {
+      "type": "belongsTo",
+      "model": "Url",
+      "foreignKey": "urlId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

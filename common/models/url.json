@@ -1,0 +1,43 @@
+{
+  "name": "Url",
+  "plural": "Urls",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "created": {
+      "type": "date",
+      "required": true,
+      "defaultFn": "now"
+    },
+    "modified": {
+      "type": "date",
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "logs": {
+      "type": "hasMany",
+      "model": "Log",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
